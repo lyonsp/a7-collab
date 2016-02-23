@@ -1,8 +1,3 @@
-data <- read.csv("https://raw.githubusercontent.com/INFO-498F/a7-survey-data/master/intro_survey_data.csv")
-library(dplyr);
-library(plotly);
-
-
 build_chart1 <- function(data) {
   xAxis <- list(
     title = "Proficiency in R"
