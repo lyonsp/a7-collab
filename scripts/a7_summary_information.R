@@ -22,4 +22,6 @@ simple_info <- function(dataset) {
                                       filter(Are.you.a.Seahawks.fan. == "YES!")
                                     )
   return(summary)
+
 }
+
