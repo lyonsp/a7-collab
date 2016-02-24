@@ -5,7 +5,7 @@ output: html_document
 ```{r, echo = FALSE, warning = FALSE, message = FALSE}
 library(dplyr)
 library(plotly)
-setwd("/Users/planktonpey/Desktop/info498f/a7-collab")
+#setwd("/Users/planktonpey/Desktop/info498f/a7-collab")
 data <- read.csv("https://raw.githubusercontent.com/INFO-498F/a7-survey-data/master/intro_survey_data.csv")
 # source("scripts/summary_info.R")
 ```
