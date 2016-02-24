@@ -32,7 +32,6 @@ build_chart1(data)
 The chart below compares what operating system students use to past experience with the R programming language.
 
 ```{r, echo = FALSE}
-
 # Read in chart2 function and render chart
 source("scripts/build_chart2.r")
 build_chart2(data)
