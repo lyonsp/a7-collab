@@ -6,7 +6,7 @@ output: html_document
 library(dplyr)
 library(plotly)
 data <- read.csv("https://raw.githubusercontent.com/INFO-498F/a7-survey-data/master/intro_survey_data.csv")
-setwd("/Users/planktonpey/Desktop/info498f/a7-collab")
+#setwd("/Users/planktonpey/Desktop/info498f/a7-collab")
 
 source("scripts/a7_summary_information.R")
 summary_data <- simple_info(data)
@@ -24,6 +24,6 @@ build_chart1(data)
 This chart DOES WHAT????
 
 ```{r, echo = FALSE}
-source("scripts/build_chart2.R")
+source("scripts/build_chart2.r")
 build_chart2(data)
 ```
