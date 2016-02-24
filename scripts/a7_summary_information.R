@@ -1,9 +1,6 @@
 library(dplyr)
 library(plotly)
 
-data <- read.csv("https://raw.githubusercontent.com/INFO-498F/a7-survey-data/master/intro_survey_data.csv")
-
-
 simple_info <- function(dataset) {
   summary <- list()
   summary$Number_of_Participants <- nrow(dataset)
@@ -26,21 +23,3 @@ simple_info <- function(dataset) {
                                     )
   return(summary)
 }
-
-#---Tested Function Using this Variable---
-#summary_table <- simple_info(data)
-
-
-# ---Ignore Code Below---
-#simple_summary <- function(dataset) {
-  #summ <- list()
-  #summ$year <- table(data$What.is.your.current.class.standing)
-  #summ$interested_in_informatics <- table(data$Are.you.interested.in.applying.to.the.Informatics.major)
-  #summ$operating_system_used <- table(data$What.operating.system.do.you.typically.use)
-  #summ$programming_experience <- table(data$What.is.your.programming.experience)
-  #summ$cats_or_dogs <- table(data$Do.you.consider.yourself)
-  
-  #return(summ)
-#}
-#summ_table <- simple_summary(data)
-
