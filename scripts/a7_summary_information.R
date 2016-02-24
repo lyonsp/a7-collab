@@ -1,11 +1,11 @@
-library(dplyr)
-library(plotly)
-
+# Creates a list with summary info
 simple_info <- function(dataset) {
   summary <- list()
+  
   summary$Number_of_Participants <- nrow(dataset)
   summary$Categories <- length(dataset)
   summary$Avg_Countries_Visited <- mean(dataset$How.many.countries.have.you.visited.in.your.life.)
+  
   summary$Interested_in_Informatics <- nrow(dataset %>% 
                                           filter(Are.you.interested.in.applying.to.the.Informatics.major. == "Yes")
                                        )

@@ -1,13 +1,20 @@
 ---
-title: "index"
+title: "Info 498 Survey Results"
 output: html_document
 ---
+
 ```{r, echo = FALSE, warning = FALSE, message = FALSE}
+# Load various libraries
 library(dplyr)
 library(plotly)
+
+# Read in .csv file with survey data
 data <- read.csv("https://raw.githubusercontent.com/INFO-498F/a7-survey-data/master/intro_survey_data.csv")
+
+# Set working directory so source() works correctly
 setwd("/Users/planktonpey/Desktop/info498f/a7-collab")
 
+# Read in summary functions
 source("scripts/a7_summary_information.R")
 summary_data <- simple_info(data)
 ```
@@ -17,13 +24,15 @@ summary_data <- simple_info(data)
 The chart below shows the varied experience Info 498 students have had with the R programming language.
 
 ```{r, echo = FALSE}
+# Read in chart1 function and render chart
 source("scripts/build_chart1.R")
 build_chart1(data)
 ```
 
-This chart DOES WHAT????
+The chart below compares what operating system students use to past experience with the R programming language.
 
 ```{r, echo = FALSE}
-source("scripts/build_chart2.R")
+# Read in chart2 function and render chart
+source("scripts/build_chart2.r")
 build_chart2(data)
 ```
