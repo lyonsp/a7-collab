@@ -24,6 +24,6 @@ build_chart1(data)
 This chart DOES WHAT????
 
 ```{r, echo = FALSE}
-# source("scripts/build_chart2.R")
-# build_chart2(data)
+source("scripts/build_chart2.R")
+build_chart2(data)
 ```
