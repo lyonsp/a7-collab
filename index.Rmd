@@ -5,14 +5,20 @@ output: html_document
 ```{r, echo = FALSE, warning = FALSE, message = FALSE}
 library(dplyr)
 library(plotly)
+<<<<<<< 1a5453bc53c261792bfd87fd6a29fd45da8bc89f
 #setwd("/Users/planktonpey/Desktop/info498f/a7-collab")
+=======
+>>>>>>> Updated index.Rmd with Summary Info
 data <- read.csv("https://raw.githubusercontent.com/INFO-498F/a7-survey-data/master/intro_survey_data.csv")
-# source("scripts/summary_info.R")
+setwd("/Users/planktonpey/Desktop/info498f/a7-collab")
+
+source("scripts/a7_summary_information.R")
+summary_data <- simple_info(data)
 ```
 
-PARAGRAPH WITH SUMMARY INFO (SITE THREE VALUES)
+`r summary_data$Number_of_Participants` Info 498 students responded to a variety of survey questions. A large majority of the class, `r summary_data$No_R_Experience` students, have never used the R programming language. Just under half of the students surveyed, `r summary_data$Uses_a_Mac` students to be exact, typically use a Mac, while a majority of `r summary_data$Interested_in_Informatics` students are interested in applying to the Informatics major. On a less technical note, of these students, `r summary_data$Hardcore_Seahawks_Fans` consider themselves to be hardcore Seahawks fans and `r summary_data$Likes_Just_Dogs` students are dog people. 
 
-This chart DOES WHAT????
+The chart below shows the varied experience Info 498 students have had with the R programming language.
 
 ```{r, echo = FALSE}
 source("scripts/build_chart1.R")
